@@ -7,17 +7,16 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "role")
-public class Role extends BaseModel {
-
-    @Column(name = "role_name", length = 20)
+@Table(name = "category")
+public class Category extends BaseModel {
     private String name;
-    @Column(name = "role_code", length = 5, unique = true)
     private String code;
 
+    @Column(name = "category_name", length = 50)
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
+    @Column(name = "code", length = 5)
     public String getCode() { return code; }
     public void setCode(String code) { this.code = code; }
 }

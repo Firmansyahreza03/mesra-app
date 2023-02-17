@@ -1,4 +1,4 @@
-package com.reza.ecommerse.model.File;
+package com.reza.ecommerse.model.file;
 
 import com.reza.ecommerse.model.common.BaseModel;
 
@@ -14,11 +14,9 @@ public class File extends BaseModel {
 
     @Column(name = "file_name")
     public String getFileName() { return fileName; }
-
     public void setFileName(String fileName) { this.fileName = fileName; }
 
     @Column(name = "file_ext")
     public String getExtension() { return extension; }
-
     public void setExtension(String extension) { this.extension = extension; }
 }
